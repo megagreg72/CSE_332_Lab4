@@ -72,6 +72,7 @@
     <ClCompile Include="BrianGauch_CSE332S_Lab3.cpp" />
     <ClCompile Include="Card.cpp" />
     <ClCompile Include="Deck.cpp" />
+    <ClCompile Include="game.cpp" />
     <ClCompile Include="Hand.cpp" />
     <ClCompile Include="Poker.cpp" />
     <ClCompile Include="stdafx.cpp" />
@@ -79,6 +80,7 @@
   <ItemGroup>
     <ClInclude Include="Card.h" />
     <ClInclude Include="Deck.h" />
+    <ClInclude Include="game.h" />
     <ClInclude Include="Hand.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
