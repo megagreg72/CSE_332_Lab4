@@ -1,0 +1,19 @@
+  a a  	
+
+1 2 3 4 5 6 7 8 9 asdf asfasd wa ssd
+token1 token2 token3 token4 token5
+2C 3C 4D 6H 7D //high cards
+3D 4C 5D 6H 10H
+4D 5H 6C 7D 9H
+7C JC 9C 10C 7D //pair
+8C 8H 9C 9D kD //two pair
+2C 2D 3S 4S 5S //pair
+10D 10C 10S 9D 2H //3of
+3S 5d 4h 6h 7s //straight
+4s 5s 8s 9s js //flush
+2h 2s 2d 3h 3d //full house
+Qh QS QD QC ks //4of
+AD KS QC JS 10H //straight
+5S KS 7S JS 10S //flush
+9S KS QS JS 10S //straight flush
+AS KS QS JS 10S //royal flush
