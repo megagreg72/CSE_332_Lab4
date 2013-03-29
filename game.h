@@ -34,4 +34,4 @@ private:
 	Game(Game * game);
 	void operator=(Game * game);
 
-}
+};
