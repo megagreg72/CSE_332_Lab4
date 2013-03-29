@@ -9,7 +9,7 @@ class Deck
 public:
 	Deck(void);
 	~Deck(void);
-	void insert(Card card);
+	void add_card(const Card & card);
 	void shuffle();
 	Card deal();
 

@@ -24,6 +24,8 @@ public:
 	bool operator>(const Hand &otherHand) const;
 	Hand & operator=(const Hand otherHand);
 	bool operator==(const Hand &otherHand) const;
+	const Card & operator[] (size_t position);
+	void remove_card (size_t position);
 	int size() const;
 	bool copy(const Hand & hand);
 	void print() const;

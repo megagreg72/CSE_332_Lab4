@@ -1,6 +1,5 @@
 #include "stdafx.h"
 #include "Player.h"
-#include "Lab4.h"
 
 Player::Player(char * name){
 	_name = name;

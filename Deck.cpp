@@ -9,7 +9,7 @@ Deck::~Deck(void)
 	//vector automatically cleans up after itself
 }
 
-void Deck::insert(Card card)
+void Deck::add_card(const Card & card)
 {
 	_cards.push_back(card);
 }
