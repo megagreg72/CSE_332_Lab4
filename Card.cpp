@@ -12,6 +12,14 @@ Card::Card()
 	_esuit = nullSuit;
 }
 
+Card::Card(_RANK erank, _SUIT esuit)
+{
+	_rank = convertErank(erank);
+	_suit = convertEsuit(esuit);
+	_erank = erank;
+	_esuit = esuit;
+}
+
 Card::Card(string rank, string suit)
 {
 	_rank = rank;

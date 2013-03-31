@@ -8,13 +8,13 @@ using namespace std;
 
 
 struct Player{
-	char * _name;
+	string _name;
 	Hand _h;
 	unsigned int won;
 	unsigned int lost;
-	Player(char * name);
+	Player(string name);
 
-	void read_file (char * in_file, unsigned int & won, unsigned int & lost);
+	void read_file (string in_file, unsigned int & won, unsigned int & lost);
 
 };
 

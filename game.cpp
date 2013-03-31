@@ -3,6 +3,8 @@
 
 using namespace std;
 
+Game * Game::_game = 0;
+
 Game::Game(){
 	_game = this;
 	_deck = new Deck();
@@ -40,13 +42,19 @@ void Game::stop_game() {
 }
 
 // method to add a player to the game as long as there is no player by that name
-void Game::add_player(char * name) {
+void Game::add_player(const string & name) {
 	for (unsigned int i = 0; i < _players.size(); i++) {			// search through the players vector to compare all existing players' names to the parameter
 		if (_players[i]->_name == name) {
 			throw "already_playing";			// if any are the same, throw an exception
 		}
 	}
 	_players.push_back(new Player(name));	// if none are the same, add the new player to the vector
+}
+
+void Game::print_players(){
+	for(unsigned int i = 0; i < _players.size(); i++){
+		cout << *_players[i] << endl;
+	}
 }
 
 // method to return a player from the game as long as there is a player by that name
@@ -63,4 +71,8 @@ Game::~Game() {
 	while (_players.size() != 0) {		// for every player in the game, delete the player - documentation says pop_back deletes the element, is this enough?
 		_players.pop_back();
 	}
+	delete _deck;
 }
+
+Game::Game(Game * game){}
+void Game::operator=(Game * game){}

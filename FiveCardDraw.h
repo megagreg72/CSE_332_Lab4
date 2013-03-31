@@ -7,12 +7,8 @@ using namespace std;
 
 class FiveCardDraw: public Game {
 
-protected:
-	size_t dealer;
-	Deck trash;
-	FiveCardDraw();
-
 public:
+	FiveCardDraw();
 	virtual int before_turn(Player & p);
 	virtual int turn(Player & p);
 	virtual int after_turn(Player & p);
@@ -20,6 +16,10 @@ public:
 	virtual int round();
 	virtual int after_round();
 
+protected:
+	size_t dealer;
+	Deck _trash;
+	
 };
 
 #endif

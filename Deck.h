@@ -8,9 +8,10 @@ class Deck
 {
 public:
 	Deck(void);
+	Deck(int decks);
 	~Deck(void);
 	void add_card(const Card & card);
-	void shuffle();
+	void shuffle(int num_swaps);
 	Card deal();
 
 private:
