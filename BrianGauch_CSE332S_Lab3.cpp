@@ -62,7 +62,7 @@ int main(int argc, char* argv[])
 	while(din>>str){
 		try{
 			Card card(str);
-			deck.insert(card);
+			deck.add_card(card);
 		}
 		catch(...){
 		}

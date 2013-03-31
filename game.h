@@ -1,6 +1,10 @@
+#ifndef Game_h
+#define Game_h
+
 #include "stdafx.h"
 #include "Deck.h"
 #include "Player.h"
+#include "FiveCardDraw.h"
 #include <string>
 #include <vector>
 
@@ -19,7 +23,7 @@ public:
 	static Game * instance();
 	static void start_game(string start);
 	static void stop_game();
-	void add_player(string name);
+	void add_player(char * name);
 	Player * find_player(string name); // how to make it return 0 if not there?
 	virtual ~Game();
 	virtual int before_turn(Player & player) = 0;
@@ -35,3 +39,5 @@ private:
 	void operator=(Game * game);
 
 };
+
+#endif
