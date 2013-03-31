@@ -72,6 +72,7 @@
     <ClCompile Include="BrianGauch_CSE332S_Lab3.cpp" />
     <ClCompile Include="Card.cpp" />
     <ClCompile Include="Deck.cpp" />
+    <ClCompile Include="FiveCardDraw.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="Hand.cpp" />
     <ClCompile Include="Player.cpp" />
@@ -81,6 +82,7 @@
   <ItemGroup>
     <ClInclude Include="Card.h" />
     <ClInclude Include="Deck.h" />
+    <ClInclude Include="FiveCardDraw.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="Hand.h" />
     <ClInclude Include="Player.h" />

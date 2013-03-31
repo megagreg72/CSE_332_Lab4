@@ -18,7 +18,7 @@ void Deck::shuffle()
 {
 	const int NUM_SHUFFLES = 10;
 	int size = (int)_cards.size();
-	srand(time(0));
+	srand((unsigned int)time(0));
 	for(int i = 0; i < size*NUM_SHUFFLES; i++){
 		int r1 = rand() % size;
 		int r2 = rand() % size;

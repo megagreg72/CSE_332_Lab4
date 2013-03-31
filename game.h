@@ -4,7 +4,6 @@
 #include "stdafx.h"
 #include "Deck.h"
 #include "Player.h"
-#include "FiveCardDraw.h"
 #include <string>
 #include <vector>
 
@@ -12,14 +11,8 @@ using namespace std;
 
 class Game {
 
-protected:
-
-	static Game * game;
-	Deck * deck;
-	vector<Player *> players;
-
 public:
-
+	Game();
 	static Game * instance();
 	static void start_game(string start);
 	static void stop_game();
@@ -33,10 +26,16 @@ public:
 	virtual int round() = 0;
 	virtual int after_round() = 0;
 
+protected:
+
+	static Game * _game;
+	Deck * _deck;
+	vector<Player *> _players;
+
 private:
 	
-	Game(Game * game);
-	void operator=(Game * game);
+	Game(Game * game); //copy constructor is private, so only one game 
+	void operator=(Game * game); //assignment operator is private, for same reason
 
 };
 
