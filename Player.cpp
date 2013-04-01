@@ -3,7 +3,7 @@
 
 Player::Player(string name){
 	_name = name;
-	_h = Hand();
+	_hand = Hand();
 	won = 0;
 	lost = 0;
 	//const char * foo = name.c_str();

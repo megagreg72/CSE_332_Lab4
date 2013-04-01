@@ -7,7 +7,7 @@ Game * Game::_game = 0;
 
 Game::Game(){
 	_game = this;
-	_deck = new Deck();
+	_deck = Deck();
 }
 
 Game * Game::instance() {

@@ -30,8 +30,8 @@ public:
 
 protected:
 
-	static Game * _game;
-	Deck * _deck;
+	static Game *_game;
+	Deck _deck;
 	vector<Player *> _players;
 
 private:

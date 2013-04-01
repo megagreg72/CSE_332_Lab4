@@ -18,7 +18,7 @@ public:
 
 protected:
 	size_t dealer;
-	Deck * _trash;
+	Deck _trash;
 	
 };
 

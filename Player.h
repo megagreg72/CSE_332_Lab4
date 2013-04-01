@@ -9,7 +9,7 @@ using namespace std;
 
 struct Player{
 	string _name;
-	Hand _h;
+	Hand _hand;
 	unsigned int won;
 	unsigned int lost;
 	Player(string name);

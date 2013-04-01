@@ -1,17 +1,19 @@
 #include "stdafx.h"
 #include "FiveCardDraw.h"
 
-FiveCardDraw::FiveCardDraw(){ //no default constructor for game??
+FiveCardDraw::FiveCardDraw(){ 
 	dealer = 0;
 	//create all 52 cards
 	//add_card them to Deck
-	_deck = new Deck(1);
-	_trash = new Deck();
+	_deck = Deck(1);
+	_trash = Deck();
 }
 
 
 int FiveCardDraw::before_turn(Player & p){
-	
+	cout << "It is your turn: " << p._name << endl;
+	cout << "Your hand is: " << endl;
+	cout << p._hand << endl;
 	
 	return 0;
 }
