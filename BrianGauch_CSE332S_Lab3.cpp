@@ -23,7 +23,7 @@ const static int HAND_SIZE = 5;
 bool poker_rank(const Hand & hand1, const Hand & hand2);
 
 int explainUsage(){
-	cout << "USAGE: BrianGauch_CSE332_Lab2.exe inputFile.txt";
+	cout << "USAGE: BrianGauch_CSE332_Lab3.exe";
 	return -1;
 }
 

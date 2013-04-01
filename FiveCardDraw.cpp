@@ -5,11 +5,8 @@ FiveCardDraw::FiveCardDraw(){ //no default constructor for game??
 	dealer = 0;
 	//create all 52 cards
 	//add_card them to Deck
-	cout << "making deck" << endl;
 	_deck = new Deck(1);
-	cout << "making trash" << endl;
-	_trash = Deck();
-	cout << "finished decks" << endl;
+	_trash = new Deck();
 }
 
 
